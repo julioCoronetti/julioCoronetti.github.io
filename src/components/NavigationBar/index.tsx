@@ -1,6 +1,22 @@
+import { useEffect } from "react";
 import { NavigationBarList, NavigationContainer } from "./styles"
 
 export const NavigationBar = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.querySelector("nav");
+            if (header) {
+                header.classList.toggle("active", window.scrollY > 0);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <NavigationContainer>
             <NavigationBarList>

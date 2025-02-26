@@ -3,6 +3,7 @@ import { defaultTheme } from "./styles/themes/default";
 import { GlobalStyle } from "./styles/global";
 import { NavigationBar } from "./components/NavigationBar";
 import { Header } from "./components/Header";
+import { About } from "./components/About";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <GlobalStyle />
       <NavigationBar />
       <Header />
+      <About />
     </ThemeProvider>
   )
 }

@@ -10,6 +10,15 @@ export const NavigationContainer = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: ${props => props.theme["blue-dark"]};
+    transition: 0.3s;
+
+    &.active {
+        height: 4rem;
+        background-color: ${props => props.theme["blue-dark"]};
+        box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+    }
 `;
 
 export const NavigationBarList = styled.ul`

@@ -6,7 +6,7 @@ export const Header = () => {
             <TextContainer>
                 <span>Hi! My name is</span>
                 <h1>
-                    Julio Coronetti! 
+                    <span>Julio Coronetti!</span> 
                     <br />
                     And I am <span>Full Stack Developer.</span>
                 </h1>

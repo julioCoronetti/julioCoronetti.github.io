@@ -31,6 +31,13 @@ export const TextContainer = styled.div`
     h1 {
         font-size: 3rem;
         font-weight: bold;
+
+        span:first-child {
+            background: linear-gradient(90deg, #BACEE4 0%, #67727E 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
     span {
