@@ -20,7 +20,7 @@ export const TextAboutContainer = styled.div`
     gap: 2rem;
 
     span {
-        color: ${props => props.theme["green-500"]};
+        color: ${props => props.theme.color["green-500"]};
         font-weight: bold;
     }
 
@@ -39,10 +39,10 @@ export const TitleAbout = styled.div`
     align-items: center;
     gap: 1rem;
 
-    color: ${props => props.theme["green-500"]};
+    color: ${props => props.theme.color["green-500"]};
 
     hr {
         width: 60%;
-        border: 1px solid ${props => props.theme["green-500"]};
+        border: 1px solid ${props => props.theme.color["green-500"]};
     }
 `;

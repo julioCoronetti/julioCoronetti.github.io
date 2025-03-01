@@ -9,13 +9,13 @@ export const GlobalStyle = createGlobalStyle`
 
     :focus {
         outline: none;
-        box-shadow: 0 0 0 2px ${props => props.theme["green-500"]};
+        box-shadow: 0 0 0 2px ${props => props.theme.color["green-500"]};
     }
 
     body {
-        color: ${props => props.theme["gray-300"]};
+        color: ${props => props.theme.color["gray-300"]};
         -webkit-font-smoothing: antialiased;
-        background-color: ${props => props.theme["blue-dark"]};
+        background-color: ${props => props.theme.color["blue-dark"]};
     }
 
     body, input, textarea, button {

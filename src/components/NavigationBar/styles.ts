@@ -11,12 +11,12 @@ export const NavigationContainer = styled.nav`
     justify-content: center;
     align-items: center;
 
-    background-color: ${props => props.theme["blue-dark"]};
+    background-color: ${props => props.theme.color["blue-dark"]};
     transition: 0.3s;
 
     &.active {
         height: 4rem;
-        background-color: ${props => props.theme["blue-dark"]};
+        background-color: ${props => props.theme.color["blue-dark"]};
         box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
     }
 `;
@@ -31,7 +31,7 @@ export const NavigationBarList = styled.ul`
     a {
         text-decoration: none;
         font-weight: bold;
-        color: ${props => props.theme["green-500"]};
+        color: ${props => props.theme.color["green-500"]};
     } 
 
     div {
@@ -40,8 +40,8 @@ export const NavigationBarList = styled.ul`
         justify-content: space-between;
 
         li:last-child a {
-            background-color: ${props => props.theme["green-500"]};
-            color: ${props => props.theme["blue-dark"]};
+            background-color: ${props => props.theme.color["green-500"]};
+            color: ${props => props.theme.color["blue-dark"]};
             padding: 0.3rem 0.8rem;
             border-radius: 5px;
         }

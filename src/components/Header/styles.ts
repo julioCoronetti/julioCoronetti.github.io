@@ -12,10 +12,10 @@ export const HeaderContainer = styled.header`
     gap: 2rem;
 
     a { 
-        border: 2px solid ${props => props.theme["green-500"]};
+        border: 2px solid ${props => props.theme.color["green-500"]};
         padding: 1rem 1.5rem;
         border-radius: 5px;
-        color: ${props => props.theme["green-500"]};
+        color: ${props => props.theme.color["green-500"]};
         font-weight: bold;
         text-decoration: none;
     }
@@ -43,11 +43,11 @@ export const TextContainer = styled.div`
     }
 
     span {
-        color: ${props => props.theme["green-500"]};
+        color: ${props => props.theme.color["green-500"]};
         text-decoration: underline;
     }
 
     p {
-        color: ${props => props.theme["gray-600"]};
+        color: ${props => props.theme.color["gray-600"]};
     }
 `;

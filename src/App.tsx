@@ -4,6 +4,7 @@ import { GlobalStyle } from "./styles/global";
 import { NavigationBar } from "./components/NavigationBar";
 import { Header } from "./components/Header";
 import { About } from "./components/About";
+import { Skills } from "./components/Skills";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <NavigationBar />
       <Header />
       <About />
+      <Skills />
     </ThemeProvider>
   )
 }
