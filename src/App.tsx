@@ -5,6 +5,9 @@ import { NavigationBar } from "./components/NavigationBar";
 import { Header } from "./components/Header";
 import { About } from "./components/About";
 import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+
+import "./index.css"
 
 const App = () => {
   return (
@@ -14,6 +17,7 @@ const App = () => {
       <Header />
       <About />
       <Skills />
+      <Projects />
     </ThemeProvider>
   )
 }

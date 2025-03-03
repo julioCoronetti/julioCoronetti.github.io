@@ -39,6 +39,9 @@ export const TitleAbout = styled.div`
     align-items: center;
     gap: 1rem;
 
+    font-size: 1.5rem;
+    font-weight: bold;
+
     color: ${props => props.theme.color["green-500"]};
 
     hr {
