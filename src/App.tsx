@@ -7,9 +7,10 @@ import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
-
-import "./index.css"
 import { EmailContact } from "./components/EmailContact";
+import { Footer } from "./components/Footer";
+
+import "./index.css";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Projects />
       <Contact />
       <EmailContact />
+      <Footer />
     </ThemeProvider>
   )
 }

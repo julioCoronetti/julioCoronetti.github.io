@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const EmailContactContainer = styled.div`
-    margin: 2rem auto;
+    margin: 8rem auto;
 
     display: flex;
     justify-content: center;
