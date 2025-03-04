@@ -65,6 +65,7 @@ export const ProjectExemple = styled.div`
     height: 100%;
     background-color: ${props => props.theme.color["blue-dark"]};
     border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 `;
 
 export const ProjectText = styled.div`
@@ -97,6 +98,7 @@ export const ProjectText = styled.div`
             color: ${props => props.theme.color["green-500"]};
             padding: 0.5rem 1rem;
             border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
         }
     }
 `;

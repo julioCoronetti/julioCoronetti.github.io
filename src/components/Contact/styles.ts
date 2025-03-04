@@ -65,6 +65,7 @@ export const TextContactArea = styled.div`
         padding: 1rem 1.5rem;
         border-radius: 10px;
         font-weight: bold;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     }
 `;
 
@@ -81,5 +82,6 @@ export const LinksContactArea = styled.div`
         height: 4rem;
         border-radius: 10px;
         background-color: ${props => props.theme.color["blue-dark"]};
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     }
 `;

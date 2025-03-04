@@ -9,6 +9,7 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 
 import "./index.css"
+import { EmailContact } from "./components/EmailContact";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
+      <EmailContact />
     </ThemeProvider>
   )
 }

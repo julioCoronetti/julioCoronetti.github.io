@@ -56,7 +56,7 @@ export const BadgeRack = styled.div<BadgeRackProps>`
     div {
         background-color: ${props => props.theme.color["green-500"]};
         border-radius: 5px;
-        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 
     }
 `;
