@@ -20,13 +20,13 @@ export const Footer = () => {
                 </LinksNavigationFooter>
 
                 <LinksFooterArea>
-                    <a href="">
+                    <a href="https://github.com/julioCoronetti" target="_blank">
                         
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/julio-coronetti/" target="_blank">
                         
                     </a>
-                    <a href="">
+                    <a href="https://www.credly.com/users/julio-coronetti" target="_blank">
                         
                     </a>
                 </LinksFooterArea>

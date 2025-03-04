@@ -16,9 +16,9 @@ export const Contact = () => {
                 </TextContactArea>
 
                 <LinksContactArea>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="https://github.com/julioCoronetti" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/julio-coronetti/" target="_blank"></a>
+                    <a href="https://www.credly.com/users/julio-coronetti" target="_blank"></a>
                 </LinksContactArea>
             </ContactArea>
         </ContactContainer>
