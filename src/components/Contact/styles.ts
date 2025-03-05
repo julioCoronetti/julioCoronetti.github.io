@@ -66,6 +66,13 @@ export const TextContactArea = styled.div`
         border-radius: 10px;
         font-weight: bold;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+        transition: 0.3s;
+
+        &:hover {
+            background-color: ${props => props.theme.color["blue-light"]};
+            transform: translate(-0.1rem, -0.1rem);
+        }
     }
 `;
 
@@ -78,10 +85,25 @@ export const LinksContactArea = styled.div`
 
     a {
         display: flex;
+        justify-content: center;
+        align-items: center;
+
         width: 4rem;
         height: 4rem;
         border-radius: 10px;
         background-color: ${props => props.theme.color["blue-dark"]};
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        transition: 0.3s;
+
+        &:hover {
+            background-color: ${props => props.theme.color["blue-light"]};
+            transform: translate(-0.1rem, -0.1rem);
+        }
     }
 `;

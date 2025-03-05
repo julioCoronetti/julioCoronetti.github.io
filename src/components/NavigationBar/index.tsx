@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from 'react-router-dom';
 import { NavigationBarList, NavigationContainer } from "./styles"
 
 export const NavigationBar = () => {
@@ -25,16 +26,16 @@ export const NavigationBar = () => {
                 </li>
                 <div>
                     <li>
-                        <a href="about">ABOUT</a>
+                        <Link to="/about">ABOUT</Link>
                     </li>
                     <li>
-                        <a href="skills">SKILLS</a>
+                        <Link to="/skills">SKILLS</Link>
                     </li>
                     <li>
-                        <a href="projects">PROJECTS</a>
+                        <Link to="/projects">PROJECTS</Link>
                     </li>
                     <li>
-                        <a href="contact">CONTACT</a>
+                        <Link to="/contact">CONTACT</Link>
                     </li>
                 </div>
             </NavigationBarList>

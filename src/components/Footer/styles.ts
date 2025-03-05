@@ -30,6 +30,7 @@ export const FooterContent = styled.div`
 
 export const FooterText = styled.div`
     width: 20%;
+    user-select: none;
     
     h2 {
         font-size: 2.2rem;
@@ -40,7 +41,18 @@ export const FooterText = styled.div`
 export const LinksNavigationFooter = styled.div`
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
+
+    a {
+        border-bottom: 2px solid transparent;
+
+        transition: 0.3s;
+
+        &:hover {
+            border-bottom: 2px solid ${props => props.theme.color["blue-dark"]};
+        }
+    }
 `;
 
 export const LinksFooterArea = styled.div`
@@ -49,12 +61,25 @@ export const LinksFooterArea = styled.div`
 
     a {
         display: flex;
+        justify-content: center;
+        align-items: center;
+
         width: 4rem;
         height: 4rem;
         border-radius: 10px;
         background-color: ${props => props.theme.color["blue-dark"]};
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 
-        color: ${props => props.theme.color["green-500"]};
+        transition: 0.3s;
+
+        &:hover {
+            background-color: ${props => props.theme.color["blue-light"]};
+            transform: translate(-0.1rem, -0.1rem);
+        }
+
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
     }
 `;

@@ -32,6 +32,13 @@ export const NavigationBarList = styled.ul`
         text-decoration: none;
         font-weight: bold;
         color: ${props => props.theme.color["green-500"]};
+        border-bottom: 2px solid transparent;
+
+        transition: 0.3s;
+
+        &:hover {
+            border-bottom: 2px solid ${props => props.theme.color["green-500"]};
+        }
     } 
 
     div {
@@ -44,6 +51,13 @@ export const NavigationBarList = styled.ul`
             color: ${props => props.theme.color["blue-dark"]};
             padding: 0.3rem 0.8rem;
             border-radius: 5px;
+            border-bottom: none;
+
+            transition: 0.3s;
+
+            &:hover {
+                background-color: ${props => props.theme.color["green-100"]};
+            }
         }
     }
 `;

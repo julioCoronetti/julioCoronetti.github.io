@@ -21,13 +21,13 @@ export const Footer = () => {
 
                 <LinksFooterArea>
                     <a href="https://github.com/julioCoronetti" target="_blank">
-                        
+                        <img src="/src/assets/github-logo.svg" alt="Github Logo" />
                     </a>
                     <a href="https://www.linkedin.com/in/julio-coronetti/" target="_blank">
-                        
+                        <img src="/src/assets/linkedin-logo.svg" alt="Linkedin Logo" />
                     </a>
                     <a href="https://www.credly.com/users/julio-coronetti" target="_blank">
-                        
+                        <img src="/src/assets/credly-logo.svg" alt="Credly Logo" />
                     </a>
                 </LinksFooterArea>
             </FooterContent>

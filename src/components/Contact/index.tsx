@@ -1,5 +1,6 @@
 import { ContactArea, ContactContainer, LinksContactArea, TextContactArea, TitleContact } from "./styles";
 
+
 export const Contact = () => {
     return (
         <ContactContainer>
@@ -16,9 +17,15 @@ export const Contact = () => {
                 </TextContactArea>
 
                 <LinksContactArea>
-                    <a href="https://github.com/julioCoronetti" target="_blank"></a>
-                    <a href="https://www.linkedin.com/in/julio-coronetti/" target="_blank"></a>
-                    <a href="https://www.credly.com/users/julio-coronetti" target="_blank"></a>
+                    <a href="https://github.com/julioCoronetti" target="_blank">
+                        <img src="/src/assets/github-logo.svg" alt="Github Logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/julio-coronetti/" target="_blank">
+                        <img src="/src/assets/linkedin-logo.svg" alt="Linkedin Logo" />
+                    </a>
+                    <a href="https://www.credly.com/users/julio-coronetti" target="_blank">
+                        <img src="/src/assets/credly-logo.svg" alt="Credly Logo" />
+                    </a>
                 </LinksContactArea>
             </ContactArea>
         </ContactContainer>

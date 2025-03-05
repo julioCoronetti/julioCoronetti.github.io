@@ -99,6 +99,13 @@ export const ProjectText = styled.div`
             padding: 0.5rem 1rem;
             border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+            transition: 0.3s;
+
+            &:hover {
+                background-color: ${props => props.theme.color["blue-light"]};
+                transform: translate(-0.1rem, -0.1rem);
+            }
         }
     }
 `;
