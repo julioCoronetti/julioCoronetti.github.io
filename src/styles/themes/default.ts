@@ -20,9 +20,9 @@ export const defaultTheme = {
   layouts: {
     layout1: `
           "react react . ."
-          "react react . tailwind"
-          ". typescript next next"
-          ". . next next"
+          "react react . tailwindcss"
+          ". typescript nextjs nextjs"
+          ". . nextjs nextjs"
         `,
     layout2: `
           "spring spring spring . ."
@@ -32,8 +32,8 @@ export const defaultTheme = {
         `,
     layout3: `
           ". threejs ."
-          "oracle oracle ."
-          "oracle oracle git"
+          "google-cloud google-cloud ."
+          "google-cloud google-cloud git"
         `,
   },
 }
