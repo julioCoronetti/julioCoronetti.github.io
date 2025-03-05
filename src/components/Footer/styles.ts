@@ -46,6 +46,7 @@ export const LinksNavigationFooter = styled.div`
 
     a {
         border-bottom: 2px solid transparent;
+        cursor: pointer;
 
         transition: 0.3s;
 

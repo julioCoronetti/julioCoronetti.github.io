@@ -1,5 +1,6 @@
 import { Copyright } from "lucide-react";
 import { FooterContainer, FooterContent, FooterText, LinksFooterArea, LinksNavigationFooter } from "./styles"
+import { Link } from "react-scroll";
 
 export const Footer = () => {
     const date = new Date();
@@ -13,10 +14,18 @@ export const Footer = () => {
                 </FooterText>
 
                 <LinksNavigationFooter>
-                    <a href="">ABOUT</a>
-                    <a href="">SKILLS</a>
-                    <a href="">PROJECTS</a>
-                    <a href="">CONTACT</a>
+                    <Link to="about" smooth={true} duration={500}>
+                        ABOUT
+                    </Link>
+                    <Link to="skills" smooth={true} duration={500}>
+                        SKILLS
+                    </Link>
+                    <Link to="projects" smooth={true} duration={500}>
+                        PROJECTS
+                    </Link>
+                    <Link to="contact" smooth={true} duration={500}>
+                        CONTACT
+                    </Link>
                 </LinksNavigationFooter>
 
                 <LinksFooterArea>

@@ -18,6 +18,15 @@ export const HeaderContainer = styled.header`
         color: ${props => props.theme.color["green-500"]};
         font-weight: bold;
         text-decoration: none;
+        cursor: pointer;
+
+        transition: 0.5s;
+
+        &:hover {
+            background: ${props => props.theme.color["green-500"]};
+            color: ${props => props.theme.color["blue-dark"]};
+        }
+
     }
 `;
 

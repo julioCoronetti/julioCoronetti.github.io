@@ -66,6 +66,7 @@ export const TextContactArea = styled.div`
         border-radius: 10px;
         font-weight: bold;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
 
         transition: 0.3s;
 

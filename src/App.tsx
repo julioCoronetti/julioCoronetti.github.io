@@ -19,7 +19,6 @@ const App = () => {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <NavigationBar />
-
       <Element name="header">
         <Header />
       </Element>
@@ -27,7 +26,7 @@ const App = () => {
       <Element name="about">
         <About />
       </Element>
-      
+
       <Element name="skills">
         <Skills />
       </Element>
@@ -39,8 +38,10 @@ const App = () => {
       <Element name="contact">
         <Contact />
       </Element>
-      
-      <EmailContact />
+
+      <Element name="email">
+        <EmailContact />
+      </Element>
       <Footer />
     </ThemeProvider >
   )
