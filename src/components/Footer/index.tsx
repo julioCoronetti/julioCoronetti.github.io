@@ -2,7 +2,7 @@ import { Copyright } from "lucide-react";
 import { FooterContainer, FooterContent, FooterText, LinksFooterArea, LinksNavigationFooter } from "./styles"
 
 export const Footer = () => {
-    let date = new Date();
+    const date = new Date();
 
     return (
         <FooterContainer>
