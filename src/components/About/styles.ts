@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.main`
+    padding-top: 5rem;
     width: 80%;
     margin: 0 auto;
 

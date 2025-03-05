@@ -14,10 +14,14 @@ export const NavigationContainer = styled.nav`
     background-color: ${props => props.theme.color["blue-dark"]};
     transition: 0.3s;
 
-    &.active {
+    &.scrolling {
         height: 4rem;
         background-color: ${props => props.theme.color["blue-dark"]};
         box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .active  {
+        border-bottom: 2px solid ${props => props.theme.color["green-500"]};
     }
 `;
 
@@ -33,6 +37,9 @@ export const NavigationBarList = styled.ul`
         font-weight: bold;
         color: ${props => props.theme.color["green-500"]};
         border-bottom: 2px solid transparent;
+        cursor: pointer;
+
+        
 
         transition: 0.3s;
 

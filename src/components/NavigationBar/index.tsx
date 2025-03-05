@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-scroll";
 import { NavigationBarList, NavigationContainer } from "./styles"
 
 export const NavigationBar = () => {
@@ -7,7 +7,7 @@ export const NavigationBar = () => {
         const handleScroll = () => {
             const header = document.querySelector("nav");
             if (header) {
-                header.classList.toggle("active", window.scrollY > 0);
+                header.classList.toggle("scrolling", window.scrollY > 0);
             }
         };
 
@@ -22,20 +22,30 @@ export const NavigationBar = () => {
         <NavigationContainer>
             <NavigationBarList>
                 <li>
-                    <a href="">JULIO CORONETTI</a>
+                    <Link to="header" smooth={true} duration={500}>
+                        JULIO CORONETTI
+                    </Link>
                 </li>
                 <div>
                     <li>
-                        <Link to="/about">ABOUT</Link>
+                        <Link to="about" smooth={true} duration={500}>
+                            ABOUT
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/skills">SKILLS</Link>
+                        <Link to="skills" smooth={true} duration={500}>
+                            SKILLS
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/projects">PROJECTS</Link>
+                        <Link to="projects" smooth={true} duration={500}>
+                            PROJECTS
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/contact">CONTACT</Link>
+                        <Link to="contact" smooth={true} duration={500}>
+                            CONTACT
+                        </Link>
                     </li>
                 </div>
             </NavigationBarList>

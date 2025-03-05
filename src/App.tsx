@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import { defaultTheme } from "./styles/themes/default";
 import { GlobalStyle } from "./styles/global";
 
@@ -13,26 +12,37 @@ import { EmailContact } from "./components/EmailContact";
 import { Footer } from "./components/Footer";
 
 import "./index.css";
+import { Element } from "react-scroll";
 
 const App = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-      <BrowserRouter>
-        <NavigationBar />
+      <NavigationBar />
+
+      <Element name="header">
         <Header />
+      </Element>
 
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <Element name="about">
+        <About />
+      </Element>
+      
+      <Element name="skills">
+        <Skills />
+      </Element>
 
-        <EmailContact />
-        <Footer />
-      </BrowserRouter>
-    </ThemeProvider>
+      <Element name="projects">
+        <Projects />
+      </Element>
+
+      <Element name="contact">
+        <Contact />
+      </Element>
+      
+      <EmailContact />
+      <Footer />
+    </ThemeProvider >
   )
 }
 
