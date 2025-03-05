@@ -25,7 +25,7 @@ export const Skills = () => {
 
                 <BadgeRack $layout="layout3">
                     <Badge
-                        technology="threejs"
+                        technology="ThreeJs"
                         size="w-[3rem]"
                     />
                     <Badge

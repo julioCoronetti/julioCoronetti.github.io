@@ -10,6 +10,10 @@ export const Badge = ({ technology, size }: BadgeProps) => {
     const gridArea = technology.toLowerCase();
     const altText = `${technology} Logo`;
 
+    if (technology === "google-cloud") {
+        technology = "Google Cloud";
+    }
+
     return (
         <div style={{ gridArea }}>
             <TooltipProvider>
