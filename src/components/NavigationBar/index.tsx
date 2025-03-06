@@ -1,8 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { NavigationBarList, NavigationContainer } from "./styles"
+import { MenuButton, NavigationBarList, NavigationContainer } from "./styles"
+import { Menu } from "lucide-react";
 
 export const NavigationBar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             const header = document.querySelector("nav");
@@ -11,43 +14,52 @@ export const NavigationBar = () => {
             }
         };
 
-        window.addEventListener("scroll", handleScroll);
+        const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+        if (mediaQuery.matches) {
+            window.addEventListener("scroll", handleScroll);
+        }
 
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            if (mediaQuery.matches) {
+                window.removeEventListener("scroll", handleScroll);
+            }
         };
     }, []);
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <NavigationContainer>
-            <NavigationBarList>
+            <Link to="header" smooth={true} duration={500}>
+                JULIO CORONETTI
+            </Link>
+            <MenuButton onClick={toggleMenu}>
+                <Menu />
+            </MenuButton>
+            <NavigationBarList className={menuOpen ? "open" : ""}>
                 <li>
-                    <Link to="header" smooth={true} duration={500}>
-                        JULIO CORONETTI
+                    <Link to="about" smooth={true} duration={500}>
+                        ABOUT
                     </Link>
                 </li>
-                <div>
-                    <li>
-                        <Link to="about" smooth={true} duration={500}>
-                            ABOUT
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="skills" smooth={true} duration={500}>
-                            SKILLS
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="projects" smooth={true} duration={500}>
-                            PROJECTS
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="contact" smooth={true} duration={500}>
-                            CONTACT
-                        </Link>
-                    </li>
-                </div>
+                <li>
+                    <Link to="skills" smooth={true} duration={500}>
+                        SKILLS
+                    </Link>
+                </li>
+                <li>
+                    <Link to="projects" smooth={true} duration={500}>
+                        PROJECTS
+                    </Link>
+                </li>
+                <li>
+                    <Link to="contact" smooth={true} duration={500}>
+                        CONTACT
+                    </Link>
+                </li>
             </NavigationBarList>
         </NavigationContainer>
     )
