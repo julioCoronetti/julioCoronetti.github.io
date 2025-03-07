@@ -60,13 +60,11 @@ export const NavigationBarList = styled.ul`
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 7rem;
         left: 0;
         width: 100%;
         background-color: ${props => props.theme.color["blue-dark"]};
-        padding: 1rem 0;
+        padding: 5rem 1rem;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        padding-top: 5rem;
 
         &.open {
             left: 0;
@@ -79,6 +77,10 @@ export const NavigationBarList = styled.ul`
 
             background-color: ${props => props.theme.color["blue-light"]};
         }
+    }
+
+    @media (max-width: 480px) {
+        padding: 0;
     }
 `;
 
