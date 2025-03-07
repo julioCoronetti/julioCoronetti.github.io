@@ -10,6 +10,11 @@ export const ProjectsContainer = styled.div`
     align-items: center;
 
     padding-top: 5rem;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        gap: 5rem;
+    }
 `;
 
 export const TitleProjects = styled.div`
@@ -48,6 +53,16 @@ export const ProjectContent = styled.div`
     align-items: center;
 
     border-radius: 10px;
+
+    @media (max-width: 768px) {
+        width: 22rem;
+        height: 27rem;
+    }
+
+    @media (max-width: 440px) {
+        width: 22rem;
+        height: 25rem;
+    }
 `;
 
 export const ContentWrapper = styled.div`
@@ -58,14 +73,26 @@ export const ContentWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @media (max-width: 768px) {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
 `;
 
 export const ProjectExemple = styled.div`
-    width: 60%;
-    height: 100%;
+    width: 18.75rem;
+    height: 12.5rem;
     background-color: ${props => props.theme.color["blue-dark"]};
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 440px) {
+        width: 17.5rem;
+        height: 11.25rem;
+    }
 `;
 
 export const ProjectText = styled.div`
@@ -107,5 +134,10 @@ export const ProjectText = styled.div`
                 transform: translate(-0.1rem, -0.1rem);
             }
         }
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+        height: 40%;
     }
 `;

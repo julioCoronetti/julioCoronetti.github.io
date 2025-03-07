@@ -15,6 +15,10 @@ export const SkillsContainer = styled.div`
     align-items: center;
 
     padding-top: 5rem;
+
+    @media (max-width: 440px) {
+        height: 200%;
+    }
 `;
 
 export const TitleSkills = styled.div`
@@ -43,6 +47,12 @@ export const BadgeRackContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        margin-top: 2rem;
+        gap: 2rem
+    }
 `;
 
 export const BadgeRack = styled.div<BadgeRackProps>`

@@ -19,6 +19,18 @@ export const FooterContainer = styled.footer`
         font-size: 1rem;
         gap: 0.5rem;
     }
+
+    @media (max-width: 768px) {
+        height: 60vh;
+
+        p {
+            font-size: 0.75rem;
+        }
+    }
+
+    @media (max-width: 440px) {
+        height: 70vh;
+    }
 `;
 
 export const FooterContent = styled.div`
@@ -26,6 +38,14 @@ export const FooterContent = styled.div`
 
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        p {
+            font-size: 1rem;
+        }
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 `;
 
 export const FooterText = styled.div`
@@ -35,6 +55,18 @@ export const FooterText = styled.div`
     h2 {
         font-size: 2.2rem;
         font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        p {
+            width: 200%;
+        }
+    }
+
+    @media (max-width: 440px) {
+        p {
+            width: 300%;
+        }
     }
 `;
 

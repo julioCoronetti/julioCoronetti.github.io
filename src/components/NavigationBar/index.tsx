@@ -37,7 +37,7 @@ export const NavigationBar = () => {
                 JULIO CORONETTI
             </Link>
             <MenuButton onClick={toggleMenu}>
-                <Menu />
+                <Menu size={35} />
             </MenuButton>
             <NavigationBarList className={menuOpen ? "open" : ""}>
                 <li>

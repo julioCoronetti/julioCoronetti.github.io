@@ -11,6 +11,16 @@ export const AboutContainer = styled.main`
     img {
         width: 20rem;
     }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        img {
+            width: 15rem;
+        }
+    }
 `;
 
 export const TextAboutContainer = styled.div`
@@ -30,6 +40,10 @@ export const TextAboutContainer = styled.div`
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
     }
 `;
 

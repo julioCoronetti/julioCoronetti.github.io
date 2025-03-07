@@ -22,6 +22,7 @@ export const NavigationContainer = styled.nav`
         font-weight: bold;
         color: ${props => props.theme.color["green-500"]};
         border-bottom: 2px solid transparent;
+        border-top: 2px solid transparent;
         cursor: pointer;
         transition: 0.3s;
 
@@ -34,6 +35,10 @@ export const NavigationContainer = styled.nav`
         height: 4rem;
         background-color: ${props => props.theme.color["blue-dark"]};
         box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 768px) {
+        height: 5rem;
     }
 `;
 
@@ -78,10 +83,6 @@ export const NavigationBarList = styled.ul`
             background-color: ${props => props.theme.color["blue-light"]};
         }
     }
-
-    @media (max-width: 480px) {
-        padding: 0;
-    }
 `;
 
 export const MenuButton = styled.div`
@@ -91,11 +92,9 @@ export const MenuButton = styled.div`
 
     color: ${props => props.theme.color["green-500"]};
 
-    &:hover {
-        transform: scale(1.2);
-    }
-
     @media (max-width: 768px) {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;

@@ -22,4 +22,13 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         font-size: 1rem;
     }
+
+    body::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: ${props => props.theme.color["green-500"]};
+        border-radius: 20px;
+    }
 `;

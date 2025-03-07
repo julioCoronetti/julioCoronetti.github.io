@@ -48,9 +48,7 @@ export const Projects = () => {
                         <CarouselItem className="flex items-center justify-center">
                             <ProjectContent>
                                 <ContentWrapper>
-                                    <ProjectExemple>
-
-                                    </ProjectExemple>
+                                    <ProjectExemple />
                                     <ProjectText>
                                         <div>
                                             <h3>Project</h3>
