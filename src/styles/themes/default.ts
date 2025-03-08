@@ -1,4 +1,5 @@
 export const defaultTheme = {
+
   color: {
     "green-100": "#A9F5BC",
     "green-500": "#2EFE81",
@@ -11,11 +12,15 @@ export const defaultTheme = {
     "layout1": "4rem 4rem 4rem 4rem",
     "layout2": "4rem 4rem 4rem 4rem 4rem",
     "layout3": "4rem 4rem 4rem",
+    "layout4": "4rem 4rem 4rem 4rem",
+    "layout5": "4rem 4rem 4rem 4rem 4rem 4rem",
   },
   heightLayout: {
     "layout1": "4rem 4rem 4rem 4rem",
     "layout2": "4rem 4rem 4rem 4rem",
     "layout3": "4rem 4rem 4rem",
+    "layout4": "4rem 4rem 4rem 4rem",
+    "layout5": "4rem 4rem 4rem 4rem",
   },
   layouts: {
     layout1: `
@@ -35,5 +40,18 @@ export const defaultTheme = {
           "google-cloud google-cloud ."
           "google-cloud google-cloud git"
         `,
+    layout4: `
+          "typescript typescript . ."
+          "typescript typescript . tailwindcss"
+          ". git styled-components styled-components"
+          ". . styled-components styled-components"
+    `,
+    layout5: `
+          "react react react . . ."
+          "react react react . react-router ."
+          "react react react shadcn shadcn figma"
+          "google-cloud . . shadcn shadcn ."
+    `,
   },
+
 }

@@ -53,7 +53,7 @@ export const FooterText = styled.div`
     user-select: none;
     
     h2 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
         font-weight: bold;
     }
 

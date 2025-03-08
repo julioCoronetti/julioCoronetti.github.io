@@ -15,21 +15,23 @@ import "./index.css";
 import { Element } from "react-scroll";
 
 const App = () => {
+  const stack = "Full-Stack"; // Front-End | Full-Stack
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <NavigationBar />
       
       <Element name="header">
-        <Header />
+        <Header stack={stack} />
       </Element>
 
       <Element name="about">
-        <About />
+        <About stack={stack} />
       </Element>
       
       <Element name="skills">
-        <Skills />
+        <Skills stack={stack} />
       </Element>
       
       <Element name="projects">
@@ -44,7 +46,7 @@ const App = () => {
         <EmailContact />
       </Element>
 
-      <Footer />
+      <Footer stack={stack} />
     </ThemeProvider >
   )
 }

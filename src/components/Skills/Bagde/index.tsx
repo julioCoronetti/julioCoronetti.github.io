@@ -14,6 +14,14 @@ export const Badge = ({ technology, size }: BadgeProps) => {
         technology = "Google Cloud";
     }
 
+    if (technology === "styled-components") {
+        technology = "Styled Components";
+    }
+    
+    if (technology === "react-router") {
+        technology = "React Router";
+    }
+
     return (
         <div style={{ gridArea }}>
             <TooltipProvider>

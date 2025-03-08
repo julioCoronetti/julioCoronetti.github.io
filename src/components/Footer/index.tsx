@@ -2,7 +2,11 @@ import { Copyright } from "lucide-react";
 import { FooterContainer, FooterContent, FooterText, LinksFooterArea, LinksNavigationFooter } from "./styles"
 import { Link } from "react-scroll";
 
-export const Footer = () => {
+interface FooterProps {
+    stack: string;
+}
+
+export const Footer = ({ stack }: FooterProps) => {
     const date = new Date();
 
     return (
@@ -10,7 +14,7 @@ export const Footer = () => {
             <FooterContent>
                 <FooterText>
                     <h2>JULIO <br /> CORONETTI</h2>
-                    <p>FULL-STACK DEVELOPER</p>
+                    <p>{stack.toUpperCase()} DEVELOPER</p>
                 </FooterText>
 
                 <LinksNavigationFooter>

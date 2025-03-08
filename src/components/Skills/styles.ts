@@ -5,6 +5,10 @@ interface BadgeRackProps {
     $layout: keyof typeof defaultTheme.layouts;
 }
 
+interface BadgeRackContainerProps {
+    $stack?: string;
+}
+
 export const SkillsContainer = styled.div`
     width: 90%;
     height: 100vh;
@@ -16,7 +20,7 @@ export const SkillsContainer = styled.div`
 
     padding-top: 5rem;
 
-    @media (max-width: 440px) {
+    @media (max-width: 768px) {
         height: 200%;
     }
 `;
@@ -40,12 +44,13 @@ export const TitleSkills = styled.div`
     }
 `;
 
-export const BadgeRackContainer = styled.div`
+export const BadgeRackContainer = styled.div<BadgeRackContainerProps>`
     width: 100%;
     height: 100%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: ${({ $stack }) => ($stack === "Front-End" ? "center" : "space-around")};
+    gap: ${({ $stack }) => ($stack === "Front-End" ? "5px" : "0")};
     align-items: center;
     flex-wrap: wrap;
 
