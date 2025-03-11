@@ -51,12 +51,12 @@ export const Projects = () => {
                                     <ProjectExemple />
                                     <ProjectText>
                                         <div>
-                                            <h3>Project</h3>
-                                            <p>Description of the project highlighting the technologies and objectives of the projects.</p>
+                                            <h3>ToDo</h3>
+                                            <p>A simple and efficient app to manage your daily tasks and boost your productivity.</p>
                                         </div>
                                         <div>
-                                            <a href="" target="_blank">Repository</a>
-                                            <a href="" target="_blank">Demo</a>
+                                            <a href="https://github.com/julioCoronetti/ToDo-List" target="_blank">Repository</a>
+                                            <a href="https://juliocoronetti-todo-list.vercel.app/" target="_blank">Demo</a>
                                         </div>
                                     </ProjectText>
                                 </ContentWrapper>

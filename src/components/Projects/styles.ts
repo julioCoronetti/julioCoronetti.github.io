@@ -85,7 +85,9 @@ export const ContentWrapper = styled.div`
 export const ProjectExemple = styled.div`
     width: 18.75rem;
     height: 12.5rem;
-    background-color: ${props => props.theme.color["blue-dark"]};
+    background: url('/src/assets/projects/todo-project.png') no-repeat center center;
+    background-size: cover;
+    border: 2px solid ${props => props.theme.color["blue-dark"]};
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 

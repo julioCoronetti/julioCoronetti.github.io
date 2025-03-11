@@ -15,7 +15,7 @@ import "./index.css";
 import { Element } from "react-scroll";
 
 const App = () => {
-  const stack = "Full-Stack"; // Front-End | Full-Stack
+  const stack = "Front-End"; // Front-End | Full-Stack
 
   return (
     <ThemeProvider theme={defaultTheme}>
