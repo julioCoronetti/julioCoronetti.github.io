@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { MenuButton, NavigationBarList, NavigationContainer } from "./styles"
+import { MenuButton, NavigationBarList, NavigationContainer } from "./styles";
 import { Menu } from "lucide-react";
 
 export const NavigationBar = () => {
@@ -31,9 +31,13 @@ export const NavigationBar = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <NavigationContainer>
-            <Link to="header" smooth={true} duration={500}>
+            <Link to="header" smooth={true} duration={500} onClick={handleLinkClick}>
                 JULIO CORONETTI
             </Link>
             <MenuButton onClick={toggleMenu}>
@@ -41,26 +45,26 @@ export const NavigationBar = () => {
             </MenuButton>
             <NavigationBarList className={menuOpen ? "open" : ""}>
                 <li>
-                    <Link to="about" smooth={true} duration={500}>
+                    <Link to="about" smooth={true} duration={500} onClick={handleLinkClick}>
                         ABOUT
                     </Link>
                 </li>
                 <li>
-                    <Link to="skills" smooth={true} duration={500}>
+                    <Link to="skills" smooth={true} duration={500} onClick={handleLinkClick}>
                         SKILLS
                     </Link>
                 </li>
                 <li>
-                    <Link to="projects" smooth={true} duration={500}>
+                    <Link to="projects" smooth={true} duration={500} onClick={handleLinkClick}>
                         PROJECTS
                     </Link>
                 </li>
                 <li>
-                    <Link to="contact" smooth={true} duration={500}>
+                    <Link to="contact" smooth={true} duration={500} onClick={handleLinkClick}>
                         CONTACT
                     </Link>
                 </li>
             </NavigationBarList>
         </NavigationContainer>
-    )
-}
+    );
+};

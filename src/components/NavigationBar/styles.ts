@@ -65,7 +65,6 @@ export const NavigationBarList = styled.ul`
         display: none;
         flex-direction: column;
         position: absolute;
-        left: 0;
         width: 100%;
         background-color: ${props => props.theme.color["blue-dark"]};
         padding: 5rem 1rem;
