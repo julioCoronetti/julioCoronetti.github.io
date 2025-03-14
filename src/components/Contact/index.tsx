@@ -1,6 +1,9 @@
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 import { ContactArea, ContactContainer, LinksContactArea, TextContactArea, TitleContact } from "./styles";
 
+// Substitua ContactArea por MotionContactArea
+const MotionContactArea = motion(ContactArea);
 
 export const Contact = () => {
     return (
@@ -10,7 +13,11 @@ export const Contact = () => {
                 <hr />
             </TitleContact>
 
-            <ContactArea>
+            <MotionContactArea
+                initial={{ opacity: 0, x: 200 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+            >
                 <TextContactArea>
                     <h3>Do you have a new idea?</h3>
                     <p>Contact me and let's develop your idea!</p>
@@ -30,7 +37,7 @@ export const Contact = () => {
                         <img src="/src/assets/credly-logo.svg" alt="Credly Logo" />
                     </a>
                 </LinksContactArea>
-            </ContactArea>
+            </MotionContactArea>
         </ContactContainer>
     );
 };

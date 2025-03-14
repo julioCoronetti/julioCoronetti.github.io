@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const EmailContactContainer = styled.div`
+    overflow: hidden;
     margin: 8rem auto;
 
     display: flex;
