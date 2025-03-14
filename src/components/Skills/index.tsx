@@ -16,16 +16,16 @@ export const Skills = ({ stack }: SkillsProps) => {
                 {stack === "Front-End" ? (
                     <>
                         <BadgeRack $layout="layout4">
-                            <Badge technology="TypeScript" size="w-[6rem]" />
+                            <Badge technology="TypeScript" size="w-[10rem]" />
                             <Badge technology="Tailwindcss" />
                             <Badge technology="Git" />
-                            <Badge technology="styled-components" size="w-[6rem]" />
+                            <Badge technology="styled-components" size="w-[10rem]" />
 
                         </BadgeRack>
 
                         <BadgeRack $layout="layout5">
                             <Badge technology="React" size="w-[10rem]" />
-                            <Badge technology="Shadcn" size="w-[6rem]" />
+                            <Badge technology="Shadcn" size="w-[10rem]" />
                             <Badge technology="Figma" />
                             <Badge technology="react-router" size="w-[3rem]" />
                             <Badge technology="google-cloud" size="w-[3rem]" />
@@ -49,7 +49,7 @@ export const Skills = ({ stack }: SkillsProps) => {
 
                         <BadgeRack $layout="layout3">
                             <Badge technology="ThreeJs" size="w-[3rem]" />
-                            <Badge technology="google-cloud" size="w-[6rem]" />
+                            <Badge technology="google-cloud" size="w-[10rem]" />
                             <Badge technology="Git" />
                         </BadgeRack>
                     </>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
+    overflow: hidden;
     width: 70%;
     height: 100vh;
     margin: 0 auto;

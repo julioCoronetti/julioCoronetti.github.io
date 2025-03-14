@@ -1,5 +1,6 @@
 import logo from '../../assets/logo.svg';
 import { AboutContainer, TextAboutContainer, TitleAbout } from './styles';
+import { motion } from "framer-motion";
 
 interface AboutProps {
     stack: string;
@@ -19,9 +20,21 @@ export const About = ({ stack }: AboutProps) => {
                     <h2>ABOUT ME</h2>
                     <hr />
                 </TitleAbout>
-                <div dangerouslySetInnerHTML={{ __html: textAbout }} />
+                <motion.div
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    <div dangerouslySetInnerHTML={{ __html: textAbout }} />
+                </motion.div>
             </TextAboutContainer>
-            <img src={logo} />
+            <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+            >
+                <img src={logo} />
+            </motion.div>
         </AboutContainer>
     )
 }
