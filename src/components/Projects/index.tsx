@@ -54,6 +54,22 @@ export const Projects = () => {
                             imgSrc={"/src/assets/projects/todo-project.png"}
                         />
 
+                        <Project
+                            titleProject={"ToDo"}
+                            description={"A simple and efficient app to manage your daily tasks and boost your productivity."}
+                            linkRepository={"https://github.com/julioCoronetti/ToDo-List"}
+                            linkDemo={"https://juliocoronetti-todo-list.vercel.app/"}
+                            imgSrc={"/src/assets/projects/todo-project.png"}
+                        />
+
+                        <Project
+                            titleProject={"ToDo"}
+                            description={"A simple and efficient app to manage your daily tasks and boost your productivity."}
+                            linkRepository={"https://github.com/julioCoronetti/ToDo-List"}
+                            linkDemo={"https://juliocoronetti-todo-list.vercel.app/"}
+                            imgSrc={"/src/assets/projects/todo-project.png"}
+                        />
+
                     </CarouselContent>
 
                     <Button

@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion"
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
@@ -134,7 +135,11 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
   const { carouselRef, orientation } = useCarousel()
 
   return (
-    <div
+    <motion.div
+      initial={{ scale: 0.5, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+
       ref={carouselRef}
       className="overflow-hidden"
       data-slot="carousel-content"
@@ -147,7 +152,7 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
         )}
         {...props}
       />
-    </div>
+    </motion.div>
   )
 }
 
