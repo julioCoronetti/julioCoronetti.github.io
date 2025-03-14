@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface ProjectExempleProps {
+    imgSrc: string;
+}
+
 export const ProjectsContainer = styled.div`
     width: 70%;
     height: 100vh;
@@ -82,10 +86,10 @@ export const ContentWrapper = styled.div`
     }
 `;
 
-export const ProjectExemple = styled.div`
+export const ProjectExemple = styled.div<ProjectExempleProps>`
     width: 18.75rem;
     height: 12.5rem;
-    background: url('/src/assets/projects/todo-project.png') no-repeat center center;
+    background: url(${props => props.imgSrc}) no-repeat center center;
     background-size: cover;
     border: 2px solid ${props => props.theme.color["blue-dark"]};
     border-radius: 10px;

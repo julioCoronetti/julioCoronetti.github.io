@@ -1,8 +1,9 @@
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "../ui/carousel"
-import { ContentWrapper, ProjectContent, ProjectExemple, ProjectsArea, ProjectsContainer, ProjectText, TitleProjects } from "./styles"
+import { Carousel, CarouselApi, CarouselContent } from "../ui/carousel"
+import { ProjectsArea, ProjectsContainer, TitleProjects } from "./styles"
 import { Button } from "../ui/button"
 import { useEffect, useState } from "react"
+import { Project } from "./Project/Project"
 
 export const Projects = () => {
     const [api, setApi] = useState<CarouselApi>();
@@ -45,23 +46,13 @@ export const Projects = () => {
                     </Button>
                     <CarouselContent>
 
-                        <CarouselItem className="flex items-center justify-center">
-                            <ProjectContent>
-                                <ContentWrapper>
-                                    <ProjectExemple />
-                                    <ProjectText>
-                                        <div>
-                                            <h3>ToDo</h3>
-                                            <p>A simple and efficient app to manage your daily tasks and boost your productivity.</p>
-                                        </div>
-                                        <div>
-                                            <a href="https://github.com/julioCoronetti/ToDo-List" target="_blank">Repository</a>
-                                            <a href="https://juliocoronetti-todo-list.vercel.app/" target="_blank">Demo</a>
-                                        </div>
-                                    </ProjectText>
-                                </ContentWrapper>
-                            </ProjectContent>
-                        </CarouselItem>
+                        <Project
+                            titleProject={"ToDo"}
+                            description={"A simple and efficient app to manage your daily tasks and boost your productivity."}
+                            linkRepository={"https://github.com/julioCoronetti/ToDo-List"}
+                            linkDemo={"https://juliocoronetti-todo-list.vercel.app/"}
+                            imgSrc={"/src/assets/projects/todo-project.png"}
+                        />
 
                     </CarouselContent>
 
