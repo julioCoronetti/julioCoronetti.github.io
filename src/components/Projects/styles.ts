@@ -5,6 +5,8 @@ interface ProjectExempleProps {
 }
 
 export const ProjectsContainer = styled.div`
+    overflow: hidden;
+
     width: 70%;
     height: 100vh;
     margin: 0 auto;
@@ -63,7 +65,7 @@ export const ProjectContent = styled.div`
         height: 27rem;
     }
 
-    @media (max-width: 440px) {
+    @media (max-width: 500px) {
         width: 22rem;
         height: 25rem;
     }
@@ -86,20 +88,22 @@ export const ContentWrapper = styled.div`
     }
 `;
 
-export const ProjectExemple = styled.div<ProjectExempleProps>`
+export const ProjectExemple = styled.div.withConfig({
+    shouldForwardProp: (prop) => prop !== "imgSrc"
+}) <ProjectExempleProps>`
     width: 18.75rem;
     height: 12.5rem;
-    background: url(${props => props.imgSrc}) no-repeat center center;
+    background: url(${(props) => props.imgSrc}) no-repeat center center;
     background-size: cover;
-    border: 2px solid ${props => props.theme.color["blue-dark"]};
+    border: 2px solid ${(props) => props.theme.color["blue-dark"]};
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-
-    @media (max-width: 440px) {
-        width: 17.5rem;
-        height: 11.25rem;
+  
+    @media (max-width: 500px) {
+      width: 17.5rem;
+      height: 11.25rem;
     }
-`;
+  `;
 
 export const ProjectText = styled.div`
     width: 50%;

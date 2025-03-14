@@ -28,7 +28,7 @@ export const FooterContainer = styled.footer`
         }
     }
 
-    @media (max-width: 440px) {
+    @media (max-width: 500px) {
         height: 70vh;
     }
 `;
@@ -63,7 +63,7 @@ export const FooterText = styled.div`
         }
     }
 
-    @media (max-width: 440px) {
+    @media (max-width: 500px) {
         p {
             width: 300%;
         }

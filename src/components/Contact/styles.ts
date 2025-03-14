@@ -45,7 +45,15 @@ export const ContactArea = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    @media (max-width: 440px) {
+    @media (max-width: 768px) {
+        align-items: center;
+        justify-content: space-around;
+        padding: 1.5rem;
+        width: 70%;
+        height: 50%;
+    }
+
+    @media (max-width: 500px) {
         width: 80%;
     }
 `;
@@ -81,16 +89,24 @@ export const TextContactArea = styled.div`
     }
 
     @media (max-width: 768px) {
+        font-size: 0.8rem;
+        align-items: center;
+
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        a {
+            font-size: 1.3rem;
+            padding: 0.5rem 1rem;
         }
     }
 
-    @media (max-width: 440px) {
-        font-size: 0.8rem;
+    @media (max-width: 500px) {
+        font-size: 1rem;
 
         h3 {
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
 
         a {
@@ -130,7 +146,20 @@ export const LinksContactArea = styled.div`
         }
     }
 
-    @media (max-width: 440px) {
+    @media (max-width: 768px) {
+        justify-content: center;
+        a {
+            width: 4rem;
+            height: 4rem;
+
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    } 
+
+    @media (max-width: 500px) {
         a {
             width: 3rem;
             height: 3rem;

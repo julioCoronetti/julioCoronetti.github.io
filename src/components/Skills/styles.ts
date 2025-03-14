@@ -10,6 +10,7 @@ interface BadgeRackContainerProps {
 }
 
 export const SkillsContainer = styled.div`
+    overflow: hidden;
     width: 90%;
     height: 100vh;
     margin: 0 auto;
