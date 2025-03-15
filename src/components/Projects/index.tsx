@@ -55,19 +55,11 @@ export const Projects = () => {
                         />
 
                         <Project
-                            titleProject={"ToDo"}
-                            description={"A simple and efficient app to manage your daily tasks and boost your productivity."}
-                            linkRepository={"https://github.com/julioCoronetti/ToDo-List"}
-                            linkDemo={"https://juliocoronetti-todo-list.vercel.app/"}
-                            imgSrc={"/src/assets/projects/todo-project.png"}
-                        />
-
-                        <Project
-                            titleProject={"ToDo"}
-                            description={"A simple and efficient app to manage your daily tasks and boost your productivity."}
-                            linkRepository={"https://github.com/julioCoronetti/ToDo-List"}
-                            linkDemo={"https://juliocoronetti-todo-list.vercel.app/"}
-                            imgSrc={"/src/assets/projects/todo-project.png"}
+                            titleProject={"Interclasse Gamer"}
+                            description={"A website where students can register and participate in a gaming tournament."}
+                            linkRepository={"https://github.com/finadoBitorneira/InterclasseGamer"}
+                            linkDemo={"https://finadobitorneira.github.io/InterclasseGamer/"}
+                            imgSrc={"/src/assets/projects/interclasseGamer-project.png"}
                         />
 
                     </CarouselContent>
