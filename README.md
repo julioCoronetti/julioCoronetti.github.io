@@ -1,14 +1,14 @@
-# Meu Portfólio
+# My Portfolio
 
-👋 Bem-vindo ao meu portfólio pessoal! Este repositório contém os projetos que eu desenvolvi ao longo da minha carreira.
+👋 Welcome to my personal portfolio! This repository contains the projects I have developed throughout my career.
 
-## Sobre Mim
+## About My
 
-😎🧃 Olá! Eu sou Julio Coronetti, um desenvolvedor apaixonado por tecnologia e inovação.
+😎🧃 Hello! I'm Julio Coronetti, a developer passionate about technology and innovation.
 
-## Tecnologias
+## Technologies
 
-Este portfólio utiliza as seguintes tecnologias:
+This portfolio uses the following technologies:
 
 - **React**
 - **TypeScript**
@@ -16,18 +16,18 @@ Este portfólio utiliza as seguintes tecnologias:
 - **Styled-components**
 - **Tailwindcss**
 
-## Contato
+## Contact
 
-Você pode me encontrar em:
+You can find me at:
 
 - [LinkedIn](https://www.linkedin.com/in/julio-coronetti)
 - [Github](https://github.com/julioCoronetti)
 - [Email](mailto:timeset13@outlook.com)
 
-## Licença
+## License
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License. See the file [LICENSE](LICENSE) for more details.
 
 ---
 
-Obrigado por visitar meu portfólio! Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.
+Thank you for visiting my portfolio! If you have any questions or suggestions, please feel free to contact me.
