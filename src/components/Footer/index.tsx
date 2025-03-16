@@ -2,9 +2,9 @@ import { Copyright } from "lucide-react";
 import { FooterContainer, FooterContent, FooterText, LinksFooterArea, LinksNavigationFooter } from "./styles"
 import { Link } from "react-scroll";
 
-import githubLog from "../../../public/assets/github-logo.svg"
-import linkedinLogo from "../../../public/assets/linkedin-logo.svg"
-import credlyLogo from "../../../public/assets/credly-logo.svg"
+import githubLog from "/assets/github-logo.svg"
+import linkedinLogo from "/assets/linkedin-logo.svg"
+import credlyLogo from "/assets/credly-logo.svg"
 
 interface FooterProps {
     stack: string;
