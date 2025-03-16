@@ -51,7 +51,7 @@ export const Projects = () => {
                             description={"A simple and efficient app to manage your daily tasks and boost your productivity."}
                             linkRepository={"https://github.com/julioCoronetti/ToDo-List"}
                             linkDemo={"https://juliocoronetti-todo-list.vercel.app/"}
-                            imgSrc={"/src/assets/projects/todo-project.png"}
+                            imgSrc={"/assets/projects/todo-project.png"}
                         />
 
                         <Project
@@ -59,7 +59,7 @@ export const Projects = () => {
                             description={"A website where students can register and participate in a gaming tournament."}
                             linkRepository={"https://github.com/finadoBitorneira/InterclasseGamer"}
                             linkDemo={"https://finadobitorneira.github.io/InterclasseGamer/"}
-                            imgSrc={"/src/assets/projects/interclasseGamer-project.png"}
+                            imgSrc={"/assets/projects/interclasseGamer-project.png"}
                         />
 
                         <Project
@@ -67,7 +67,7 @@ export const Projects = () => {
                             description={"A web app to mix various ambient sounds for a personalized and relaxing experience."}
                             linkRepository={"https://github.com/julioCoronetti/AmbientSound"}
                             linkDemo={"https://juliocoronetti-ambient-sound.vercel.app/"}
-                            imgSrc={"/src/assets/projects/ambientSound-project.png"}
+                            imgSrc={"/assets/projects/ambientSound-project.png"}
                         />
 
                     </CarouselContent>

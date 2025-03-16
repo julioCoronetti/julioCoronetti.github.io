@@ -2,9 +2,9 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { ContactArea, ContactContainer, LinksContactArea, TextContactArea, TitleContact } from "./styles";
 
-import githubLog from "../../assets/github-logo.svg"
-import linkedinLogo from "../../assets/linkedin-logo.svg"
-import credlyLogo from "../../assets/credly-logo.svg"
+import githubLog from "../../../public/assets/github-logo.svg"
+import linkedinLogo from "../../../public/assets/linkedin-logo.svg"
+import credlyLogo from "../../../public/assets/credly-logo.svg"
 
 // Substitua ContactArea por MotionContactArea
 const MotionContactArea = motion.create(ContactArea);

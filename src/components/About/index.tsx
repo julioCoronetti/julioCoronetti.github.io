@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.svg';
+import logo from '../../../public/assets/logo.svg';
 import { AboutContainer, TextAboutContainer, TitleAbout } from './styles';
 import { motion } from "framer-motion";
 
