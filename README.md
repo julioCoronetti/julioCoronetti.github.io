@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-👋 Bem-vindo ao meu portfólio pessoal! Este repositório contém os projetos e trabalhos que eu desenvolvi ao longo da minha carreira.
+👋 Bem-vindo ao meu portfólio pessoal! Este repositório contém os projetos que eu desenvolvi ao longo da minha carreira.
 
 ## Sobre Mim
 
