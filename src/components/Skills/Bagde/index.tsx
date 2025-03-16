@@ -18,7 +18,7 @@ export const Badge = ({ technology, size }: BadgeProps) => {
     } as const;
 
     const displayTechnology = formattedTechNames[technology] || technology;
-    const logoSrc = `public/assets/technologies/${encodeURIComponent(technology.toLowerCase())}-logo.svg`;
+    const logoSrc = `/assets/technologies/${encodeURIComponent(technology.toLowerCase())}-logo.svg`;
     const gridArea = technology.toLowerCase();
     const altText = `${displayTechnology} Logo`;
     const randomNumber = Math.floor(Math.random() * 3) + 1;
