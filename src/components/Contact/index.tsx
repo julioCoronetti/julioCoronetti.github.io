@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ContactArea, ContactContainer, LinksContactArea, TextContactArea, TitleContact } from "./styles";
 
 // Substitua ContactArea por MotionContactArea
-const MotionContactArea = motion(ContactArea);
+const MotionContactArea = motion.create(ContactArea);
 
 export const Contact = () => {
     return (

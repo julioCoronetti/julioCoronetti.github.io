@@ -62,6 +62,14 @@ export const Projects = () => {
                             imgSrc={"/src/assets/projects/interclasseGamer-project.png"}
                         />
 
+                        <Project
+                            titleProject={"Ambient Sound"}
+                            description={"A web app to mix various ambient sounds for a personalized and relaxing experience."}
+                            linkRepository={"https://github.com/julioCoronetti/AmbientSound"}
+                            linkDemo={"https://juliocoronetti-ambient-sound.vercel.app/"}
+                            imgSrc={"/src/assets/projects/ambientSound-project.png"}
+                        />
+
                     </CarouselContent>
 
                     <Button
