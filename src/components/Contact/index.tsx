@@ -2,6 +2,10 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { ContactArea, ContactContainer, LinksContactArea, TextContactArea, TitleContact } from "./styles";
 
+import githubLog from "../../assets/github-logo.svg"
+import linkedinLogo from "../../assets/linkedin-logo.svg"
+import credlyLogo from "../../assets/credly-logo.svg"
+
 // Substitua ContactArea por MotionContactArea
 const MotionContactArea = motion.create(ContactArea);
 
@@ -28,13 +32,13 @@ export const Contact = () => {
 
                 <LinksContactArea>
                     <a href="https://github.com/julioCoronetti" target="_blank">
-                        <img src="/src/assets/github-logo.svg" alt="Github Logo" />
+                        <img src={githubLog} alt="Github Logo" />
                     </a>
                     <a href="https://www.linkedin.com/in/julio-coronetti/" target="_blank">
-                        <img src="/src/assets/linkedin-logo.svg" alt="Linkedin Logo" />
+                        <img src={linkedinLogo} alt="Linkedin Logo" />
                     </a>
                     <a href="https://www.credly.com/users/julio-coronetti" target="_blank">
-                        <img src="/src/assets/credly-logo.svg" alt="Credly Logo" />
+                        <img src={credlyLogo} alt="Credly Logo" />
                     </a>
                 </LinksContactArea>
             </MotionContactArea>

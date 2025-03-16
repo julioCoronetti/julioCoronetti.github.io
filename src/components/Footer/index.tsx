@@ -1,7 +1,10 @@
 import { Copyright } from "lucide-react";
 import { FooterContainer, FooterContent, FooterText, LinksFooterArea, LinksNavigationFooter } from "./styles"
 import { Link } from "react-scroll";
+
 import githubLog from "../../assets/github-logo.svg"
+import linkedinLogo from "../../assets/linkedin-logo.svg"
+import credlyLogo from "../../assets/credly-logo.svg"
 
 interface FooterProps {
     stack: string;
@@ -38,10 +41,10 @@ export const Footer = ({ stack }: FooterProps) => {
                         <img src={githubLog} alt="Github Logo" />
                     </a>
                     <a href="https://www.linkedin.com/in/julio-coronetti/" target="_blank">
-                        <img src="/assets/linkedin-logo.svg" alt="Linkedin Logo" />
+                        <img src={linkedinLogo} alt="Linkedin Logo" />
                     </a>
                     <a href="https://www.credly.com/users/julio-coronetti" target="_blank">
-                        <img src="/assets/credly-logo.svg" alt="Credly Logo" />
+                        <img src={credlyLogo} alt="Credly Logo" />
                     </a>
                 </LinksFooterArea>
             </FooterContent>
