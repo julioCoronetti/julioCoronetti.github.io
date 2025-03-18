@@ -30,7 +30,7 @@ export const HeaderContainer = styled.header`
 
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 640px) {
         a {
             padding: 0.5rem 1rem;
         }
@@ -69,10 +69,10 @@ export const TextContainer = styled.div`
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
 
             span {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
             }
         }
 
@@ -82,7 +82,7 @@ export const TextContainer = styled.div`
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
 
         span {
@@ -90,7 +90,7 @@ export const TextContainer = styled.div`
         }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 640px) {
         h1 {
             font-size: 1.5rem;
 

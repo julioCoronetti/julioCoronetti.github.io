@@ -54,7 +54,7 @@ export const ContactArea = styled.div`
         height: 50%;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
         width: 90%;
         height: 50vh;
     }
@@ -104,7 +104,7 @@ export const TextContactArea = styled.div`
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
         font-size: 1rem;
 
         h3 {
@@ -164,7 +164,7 @@ export const LinksContactArea = styled.div`
         }
     } 
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
         a {
             width: 3rem;
             height: 3rem;

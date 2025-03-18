@@ -1,4 +1,4 @@
-import { Badge } from "./Bagde";
+import { Badge } from "./Badge";
 import { BadgeRack, BadgeRackContainer, SkillsContainer, TitleSkills } from "./styles";
 
 interface SkillsProps {

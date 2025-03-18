@@ -13,6 +13,8 @@ export const FooterContainer = styled.footer`
     align-items: center;
     justify-content: space-around;
 
+    margin-top: 6rem;
+
     p {
         display: flex;
         align-items: center;
@@ -28,8 +30,8 @@ export const FooterContainer = styled.footer`
         }
     }
 
-    @media (max-width: 500px) {
-        height: 70vh;
+    @media (max-width: 640px) {
+        height: 50vh;
 
         p {
             font-size: 0.5rem;
@@ -51,7 +53,7 @@ export const FooterContent = styled.div`
         gap: 2rem;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
         p {
             font-size: 0.75rem;
         }
@@ -74,7 +76,7 @@ export const FooterText = styled.div`
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
         h2 {
             font-size: 1.5rem;
         }
@@ -102,7 +104,7 @@ export const LinksNavigationFooter = styled.div`
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
         gap: 1rem;
 
         a {

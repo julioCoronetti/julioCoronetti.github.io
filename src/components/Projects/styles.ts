@@ -18,11 +18,11 @@ export const ProjectsContainer = styled.div`
     padding-top: 5rem;
 
     @media (max-width: 768px) {
-        width: 90%;
+        width: 100%;
         gap: 5rem;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
         height: 125vh
     }
 `;
@@ -69,7 +69,7 @@ export const ProjectContent = styled.div`
         height: 27rem;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
         width: 15rem;
         height: 25rem;
     }
@@ -91,6 +91,10 @@ export const ContentWrapper = styled.div`
         padding: 0;
     }
 
+    @media (max-width: 640px) {
+        height: auto;
+    }
+
 `;
 
 export const ProjectExemple = styled.div.withConfig({
@@ -104,7 +108,7 @@ export const ProjectExemple = styled.div.withConfig({
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
       width: 13rem;
       height: 8rem;
     }

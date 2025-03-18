@@ -1,5 +1,6 @@
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 
 interface BadgeProps {
     technology: string;
@@ -11,6 +12,7 @@ type TechnologyNames = {
 };
 
 export const Badge = ({ technology, size }: BadgeProps) => {
+
     const formattedTechNames: TechnologyNames = {
         "google-cloud": "Google Cloud",
         "styled-components": "Styled Components",
@@ -21,7 +23,7 @@ export const Badge = ({ technology, size }: BadgeProps) => {
     const logoSrc = `/assets/technologies/${encodeURIComponent(technology.toLowerCase())}-logo.svg`;
     const gridArea = technology.toLowerCase();
     const altText = `${displayTechnology} Logo`;
-    const randomNumber = Math.floor(Math.random() * 3) + 1;
+    const randomNumber = useMemo(() => Math.floor(Math.random() * 3) + 1, []);
 
     const animationVariants = [
         { initial: { x: 100, scale: 0.2, opacity: 0 }, whileInView: { x: 0, scale: 1, opacity: 1 }, className: "z-10" },
@@ -34,11 +36,12 @@ export const Badge = ({ technology, size }: BadgeProps) => {
             style={{ gridArea }}
             {...animationVariants[randomNumber - 1]}
             transition={{ type: "spring", damping: 15, stiffness: 90, duration: 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}
         >
             <TooltipProvider>
                 <Tooltip>
                     <TooltipTrigger>
-                        <img className={size} src={logoSrc} alt={altText} title={altText} />
+                        <img className={size} src={logoSrc} alt={altText} title={altText}  />
                     </TooltipTrigger>
                     <TooltipContent>
                         <p>{displayTechnology}</p>

@@ -35,7 +35,7 @@ export const Projects = () => {
                         align: "start",
                         loop: true,
                     }}
-                    className="w-full flex items-center justify-between max-sm:flex-col max-sm:gap-5"
+                    className="w-full flex items-center justify-between"
                     setApi={setApi}
                 >
                     <Button
