@@ -45,4 +45,21 @@ export const EmailContactContainer = styled.div`
             transform: translate(0.1rem, 0.1rem);
         }
     }
+
+    @media (max-width: 768px) {
+        gap: 0.5rem;
+
+        margin: 2rem auto;
+
+        div {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        button {
+            width: 12rem;
+            height: 4rem;
+            font-size: 0.75rem;
+        }
+    }
 `;

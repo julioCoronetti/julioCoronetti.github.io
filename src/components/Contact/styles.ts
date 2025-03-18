@@ -55,7 +55,8 @@ export const ContactArea = styled.div`
     }
 
     @media (max-width: 500px) {
-        width: 80%;
+        width: 90%;
+        height: 50vh;
     }
 `;
 
@@ -110,8 +111,11 @@ export const TextContactArea = styled.div`
             font-size: 1.3rem;
         }
 
+        
+
         a {
             padding: 0.5rem 1rem;
+            font-size: 1rem;
         }
     }
 `;

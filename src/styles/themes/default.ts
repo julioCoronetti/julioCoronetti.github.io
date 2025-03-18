@@ -12,15 +12,16 @@ export const defaultTheme = {
     "layout1": "4rem 4rem 4rem 4rem",
     "layout2": "4rem 4rem 4rem 4rem 4rem",
     "layout3": "4rem 4rem 4rem",
-    "layout4": "4rem 4rem 4rem 4rem",
-    "layout5": "4rem 4rem 4rem 4rem 4rem 4rem",
+    "layout4": "1fr 1fr 1fr 1fr",
+    "layout5": "1fr 1fr 1fr 1fr 1fr 1fr",
+
   },
   heightLayout: {
     "layout1": "4rem 4rem 4rem 4rem",
     "layout2": "4rem 4rem 4rem 4rem",
     "layout3": "4rem 4rem 4rem",
-    "layout4": "4rem 4rem 4rem 4rem",
-    "layout5": "4rem 4rem 4rem 4rem",
+    "layout4": "1fr 1fr 1fr 1fr",
+    "layout5": "1fr 1fr 1fr 1fr",
   },
   layouts: {
     layout1: `

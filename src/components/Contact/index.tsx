@@ -6,7 +6,6 @@ import githubLog from "/assets/github-logo.svg"
 import linkedinLogo from "/assets/linkedin-logo.svg"
 import credlyLogo from "/assets/credly-logo.svg"
 
-// Substitua ContactArea por MotionContactArea
 const MotionContactArea = motion.create(ContactArea);
 
 export const Contact = () => {

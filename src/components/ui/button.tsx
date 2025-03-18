@@ -16,7 +16,7 @@ const buttonVariants = cva(
           "bg-destructive text-white shadow-xs hover:bg-destructive/90",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        ghost: "size-auto cursor-pointer text-[#2EFE81] hover:text-[#A9F5BC]",
+        ghost: "size-auto cursor-pointer text-[#2EFE81] hover:text-[#A9F5BC] max-sm:rotate-90",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {

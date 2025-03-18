@@ -59,6 +59,10 @@ export const BadgeRackContainer = styled.div<BadgeRackContainerProps>`
         margin-top: 2rem;
         gap: 2rem
     }
+
+    @media (max-width: 500px) {
+        width: 250px;
+    }
 `;
 
 export const BadgeRack = styled.div<BadgeRackProps>`
@@ -77,6 +81,10 @@ export const BadgeRack = styled.div<BadgeRackProps>`
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    @media (max-width: 500px) {
+
     }
 `;
 

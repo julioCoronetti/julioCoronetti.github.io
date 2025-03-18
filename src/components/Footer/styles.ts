@@ -30,6 +30,10 @@ export const FooterContainer = styled.footer`
 
     @media (max-width: 500px) {
         height: 70vh;
+
+        p {
+            font-size: 0.5rem;
+        }
     }
 `;
 
@@ -45,6 +49,13 @@ export const FooterContent = styled.div`
         }
         flex-wrap: wrap;
         gap: 2rem;
+    }
+
+    @media (max-width: 500px) {
+        p {
+            font-size: 0.75rem;
+        }
+        gap: 1rem;
     }
 `;
 
@@ -64,6 +75,10 @@ export const FooterText = styled.div`
     }
 
     @media (max-width: 500px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+
         p {
             width: 300%;
         }
@@ -84,6 +99,14 @@ export const LinksNavigationFooter = styled.div`
 
         &:hover {
             border-bottom: 2px solid ${props => props.theme.color["blue-dark"]};
+        }
+    }
+
+    @media (max-width: 500px) {
+        gap: 1rem;
+
+        a {
+            font-size: 0.75rem;
         }
     }
 `;

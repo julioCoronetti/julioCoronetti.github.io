@@ -21,6 +21,10 @@ export const ProjectsContainer = styled.div`
         width: 90%;
         gap: 5rem;
     }
+
+    @media (max-width: 500px) {
+        height: 125vh
+    }
 `;
 
 export const TitleProjects = styled.div`
@@ -66,7 +70,7 @@ export const ProjectContent = styled.div`
     }
 
     @media (max-width: 500px) {
-        width: 22rem;
+        width: 15rem;
         height: 25rem;
     }
 `;
@@ -86,6 +90,7 @@ export const ContentWrapper = styled.div`
         justify-content: center;
         padding: 0;
     }
+
 `;
 
 export const ProjectExemple = styled.div.withConfig({
@@ -100,8 +105,8 @@ export const ProjectExemple = styled.div.withConfig({
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   
     @media (max-width: 500px) {
-      width: 17.5rem;
-      height: 11.25rem;
+      width: 13rem;
+      height: 8rem;
     }
   `;
 
