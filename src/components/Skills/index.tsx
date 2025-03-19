@@ -20,7 +20,6 @@ export const Skills = ({ stack }: SkillsProps) => {
                             <Badge technology="Tailwindcss" />
                             <Badge technology="Git" />
                             <Badge technology="styled-components" size="w-[10rem]" />
-
                         </BadgeRack>
 
                         <BadgeRack $layout="layout5">
