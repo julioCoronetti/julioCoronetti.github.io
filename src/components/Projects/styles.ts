@@ -91,12 +91,13 @@ export const ContentWrapper = styled.div`
     @media (max-width: 768px) {
         height: 100%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         padding: 0;
     }
 
     @media (max-width: 640px) {
-        height: auto;
+        justify-content: space-around;
+        height: fit-content;
     }
 
 `;
@@ -162,5 +163,14 @@ export const ProjectText = styled.div`
     @media (max-width: 768px) {
         width: 90%;
         height: 40%;
+        gap: 1rem;
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.875rem;
+        }
     }
 `;
