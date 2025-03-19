@@ -7,7 +7,7 @@ interface HeaderProps {
 }
 
 const textVariants = (delay: number) => ({
-    hidden: { x: 100 + delay * 50, opacity: 0 },
+    hidden: { x: 50 + delay * 50, opacity: 0 },
     visible: { x: 0, opacity: 1, transition: { duration: 0.3 + delay * 0.2 } },
 });
 

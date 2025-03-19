@@ -92,10 +92,10 @@ export const TextContainer = styled.div`
 
     @media (max-width: 640px) {
         h1 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
 
             span {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
         }
         

@@ -43,6 +43,10 @@ export const TitleProjects = styled.div`
         width: 100%;
         border: 1px solid ${props => props.theme.color["green-500"]};
     }
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
 `;
 
 export const ProjectsArea = styled.div`
