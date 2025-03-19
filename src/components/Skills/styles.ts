@@ -84,9 +84,5 @@ export const BadgeRack = styled.div<BadgeRackProps>`
 
         padding: 0.4rem;
     }
-
-    @media (max-width: 640px) {
-
-    }
 `;
 
