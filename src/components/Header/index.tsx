@@ -28,7 +28,7 @@ export const Header = ({ stack }: HeaderProps) => {
                 </motion.h1>
 
                 <motion.p initial="hidden" whileInView="visible" variants={textVariants(3)}>
-                    A web developer specializing in building web applications. Focused on
+                    A developer specialized in building web applications. Focused on
                     creating exotic and fun experiences!
                 </motion.p>
             </TextContainer>
