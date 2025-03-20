@@ -33,7 +33,7 @@ export const About = ({ stack }: AboutProps) => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
             >
-                <img src={logo} />
+                <img src={logo} alt="Julio Coronetti's Logo" />
             </motion.div>
         </AboutContainer>
     )
