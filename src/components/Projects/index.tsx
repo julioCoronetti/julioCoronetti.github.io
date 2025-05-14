@@ -47,14 +47,6 @@ export const Projects = () => {
                     <CarouselContent>
 
                         <Project
-                            titleProject={"ToDo"}
-                            description={"A simple and efficient app to manage your daily tasks and boost your productivity."}
-                            linkRepository={"https://github.com/julioCoronetti/ToDo-List"}
-                            linkDemo={"https://juliocoronetti-todo-list.vercel.app/"}
-                            imgSrc={"/assets/projects/todo-project.png"}
-                        />
-
-                        <Project
                             titleProject={"Interclasse Gamer"}
                             description={"A website where students can register and participate in a gaming tournament."}
                             linkRepository={"https://github.com/finadoBitorneira/InterclasseGamer"}
@@ -68,6 +60,22 @@ export const Projects = () => {
                             linkRepository={"https://github.com/julioCoronetti/AmbientSound"}
                             linkDemo={"https://juliocoronetti-ambient-sound.vercel.app/"}
                             imgSrc={"/assets/projects/ambientSound-project.png"}
+                        />
+
+                        <Project
+                            titleProject={"ToDo"}
+                            description={"A simple and efficient app to manage your daily tasks and boost your productivity."}
+                            linkRepository={"https://github.com/julioCoronetti/ToDo-List"}
+                            linkDemo={"https://juliocoronetti-todo-list.vercel.app/"}
+                            imgSrc={"/assets/projects/todo-project.png"}
+                        />
+
+                        <Project
+                            titleProject={"Pokedex"}
+                            description={"A modern Pokédex app to explore and learn about Pokémon!"}
+                            linkRepository={"https://github.com/julioCoronetti/Pokedex"}
+                            linkDemo={"https://juliocoronetti-pokedex.vercel.app/"}
+                            imgSrc={"/assets/projects/pokedex-project.png"}
                         />
 
                     </CarouselContent>
