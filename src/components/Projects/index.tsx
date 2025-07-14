@@ -65,6 +65,16 @@ export const Projects = () => {
 						/>
 
 						<Project
+							titleProject={"Codele"}
+							description={
+								"Guess the correct word in 6 tries. After each guess, the letters show how close you are to the solution."
+							}
+							linkRepository={"https://github.com/julioCoronetti/Codele"}
+							linkDemo={"https://juliocoronetti-codele.vercel.app/"}
+							imgSrc={"/assets/projects/codele-project.png"}
+						/>
+
+						<Project
 							titleProject={"Ambient Sound"}
 							description={
 								"A web app to mix various ambient sounds for a personalized and relaxing experience."
